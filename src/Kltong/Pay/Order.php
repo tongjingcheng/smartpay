@@ -4,7 +4,6 @@ namespace Kltong\Pay;
 class Order{
 
     public function list(){
-        echo "hhhhhhhhahahaahahah";
-        return "我被正常接收到了啊。";
+        return "可以调到我了吗？";
     }
 }
