@@ -1,0 +1,17 @@
+{
+    "name": "tongjingcheng/kltong",
+    "description": "这个是开联通支php事例",
+    "type": "library",
+    "authors": [
+        {
+            "name": "tongjingcheng",
+            "email": "tongjingcheng@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Kltong\\Pay\\": "src/Kltong/Pay/"
+        }
+    }
+}
