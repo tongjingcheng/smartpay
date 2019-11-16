@@ -2,6 +2,8 @@
     "name": "tongjingcheng/kltong",
     "description": "这个是开联通支php事例",
     "type": "library",
+    "homepage": "https://github.com/tongjingcheng/smartpay",
+    "license": "MIT",
     "authors": [
         {
             "name": "tongjingcheng",
