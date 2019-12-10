@@ -11,7 +11,7 @@ class ArrayParams
         ksort($data);
         $pre_array = array();
         foreach ($data as $k=>$val) {
-            if(!empty($val) && !in_array($k,array('sign','app_cert','app_pass'))){
+            if(!empty($val) && !in_array($k,array('dev','sign','app_cert','app_pass'))){
                 $pre_array[] = $k.'='.$val;
             }
         }

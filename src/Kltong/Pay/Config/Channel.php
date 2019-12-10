@@ -1,5 +1,5 @@
 <?php
-namespace Kltong\Pay;
+namespace Kltong\Pay\Config;
 
 /**
  * 常量

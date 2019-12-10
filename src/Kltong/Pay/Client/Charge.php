@@ -2,7 +2,7 @@
 namespace Kltong\Pay\Client;
 
 use Kltong\Pay\ChargeContext;
-use Kltong\Pay\Channel;
+use Kltong\Pay\Config\Channel;
 use Kltong\Pay\Exception\PayException;
 
 /**
@@ -17,7 +17,8 @@ class Charge
      * @var array
      */
     private static $support_channel=[
-        Channel::PRECARD_MAGNETICANDPWD
+        Channel::PRECARD_MAGNETICANDPWD,
+        Channel::PRECARD_CARDWITHPASS,
         ];
 
     /**
