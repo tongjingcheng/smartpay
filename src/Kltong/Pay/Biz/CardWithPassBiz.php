@@ -43,8 +43,6 @@ class CardWithPassBiz extends PreCardProcess
         $sign = RSA::getSign($string,file_get_contents($this->pre_card_config->getPkcs12()),$this->pre_card_config->getPkcsPassword());
         $this->cardPassContent->sign = $sign ;
 
-        $head = "";
-        $content = '';
         $content = array(
             'cardId'=>$this->cardPassContent->cardId,
             'txAt'=>$this->cardPassContent->txAt,
