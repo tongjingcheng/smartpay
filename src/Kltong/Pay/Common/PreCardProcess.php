@@ -51,8 +51,9 @@ class PreCardProcess implements BaseStrategy
         }
 
         $client = new Client([
-            'timeout' => '10.0'
+            'timeout' => '10'
         ]);
+        $url = 'https://ipay.chinasmartpay.cn/openapi/LianxinCard/pay';
         $response = $client->request('POST', $url, ['timeout'=>5,'verify'=>false,'json'=>$data]);
         if ($response->getStatusCode() != '200') {
             throw new PayException('网络发生错误，请稍后再试curl返回码：' . $response->getReasonPhrase());
@@ -60,7 +61,7 @@ class PreCardProcess implements BaseStrategy
         $body = $response->getBody();
         // 格式化为数组
         $retData = json_decode($body,true);
-        if (isset($retData['responseCode']) &&  $retData['responseCode']!= 'SUCCESS') {
+        if (isset($retData['responseCode']) &&  $retData['responseCode']!= '000000') {
             throw new PayException('支付失败：' . $retData['responseMsg']);
         }
         return $retData;

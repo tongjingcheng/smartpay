@@ -12,7 +12,7 @@ $pre_card_config->setDev(1)->setMerchantId('903310112340001')
 $data = [
     'cardId'=>'8889990010000028810',
     'txAt'=>1,
-    'reqSeq'=>date("mdHis").random_int(1,100000),
+    'reqSeq'=>date("mdHis"),
     'pin1'=>'580058',
 
 ];
@@ -23,3 +23,5 @@ try{
 }catch(Exception $e){
     exit($e->getMessage());
 }
+
+var_dump($result);
