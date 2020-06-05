@@ -1,6 +1,6 @@
 {
     "name": "tongjingcheng/kltong",
-    "description": "这个是开联通支php事例",
+    "description": "开联通-连心卡消费，冲正，查询等demo事例",
     "type": "library",
     "homepage": "https://github.com/tongjingcheng/smartpay",
     "license": "MIT",
@@ -8,6 +8,10 @@
         {
             "name": "tongjingcheng",
             "email": "tongjingcheng@gmail.com"
+        },
+        {
+            "name": "tongjc",
+            "email": "tongjc@kltong.com"
         }
     ],
     "require": {
